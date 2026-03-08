@@ -1,0 +1,46 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Create Vs Engineering
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible so we can evaluate it.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: A brief, one-sentence summary of the feature you are requesting.
+      placeholder: "e.g. Add a new machine that converts X into Y."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Use Case
+      description: Why would this feature be useful? What problem does it solve?
+      placeholder: Describe the problem or gameplay situation this feature would address.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Describe the feature in as much detail as you like — behaviour, crafting recipes, visuals, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative approaches or workarounds?
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any screenshots, mockups, or references that might help illustrate your idea.

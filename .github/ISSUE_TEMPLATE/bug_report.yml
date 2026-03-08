@@ -1,0 +1,83 @@
+name: Bug Report
+description: Report a bug or crash in Create Vs Engineering
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill in as much information as possible to help us fix it quickly.
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      description: Which version of Create Vs Engineering are you using?
+      placeholder: "e.g. 1.2.3"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      description: Which version of Minecraft are you running?
+      placeholder: "e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_loader
+    attributes:
+      label: Mod Loader
+      description: Which mod loader are you using?
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened and what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reliably reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Do '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash_log
+    attributes:
+      label: Crash Report / Log
+      description: |
+        If the game crashed, paste the crash report here (found in `.minecraft/crash-reports/`) or upload the latest log (`.minecraft/logs/latest.log`).
+        Tip: you can upload files by clicking the text area and then dragging the file in.
+      render: text
+
+  - type: textarea
+    id: mod_list
+    attributes:
+      label: Other Mods Installed
+      description: List any other mods you have installed. This helps us identify conflicts.
+      placeholder: "e.g. Create 0.5.1, JEI 15.2.0.27, ..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Screenshots, videos, or any other information that might be relevant.
